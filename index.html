@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<meta name="theme-color" content="#000000" />
+	<meta name="language" content="English" />
+
+	<title>Astralerz Lite</title>
+
+	<link rel="stylesheet" href="/assets/css/style.css" />
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+	<script src="https://kit.fontawesome.com/54a3076adf.js" crossorigin="anonymous"></script>
+	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<script src="/uv/uv.bundle.js"></script>
+	<script src="/uv/uv.config.js"></script>
+
+	<script src="/assets/js/index.js" defer></script>
+	<script src="/assets/js/arrows.js" defer></script>
+	<!-- Include Eruda -->
+	<script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+
+	
+
+</head>
+
+<body>
+	<div class="sidebar">
+		<div class="left-group">
+		  <a href="" id="logo">
+		  <a href="/" class="nav-active"><span>Home</span></a>
+		  <a href="/settings.html" class="nav-btn"><span>Settings</span></a>
+		</div>
+		<div class="icon-container">
+			<i class="fa-solid fa-arrow-left" style="color: white; font-size: 25px;" onclick="ifrBack()"></i>
+			<i class="fa-solid fa-arrow-right" style="color: white; font-size: 25px;" onclick="ifrForward()"></i>
+			<i class="fa-solid fa-code" id="erudascr" style="color: white; font-size: 25px; margin-left: 25px" onclick="erudaToggle()"></i>
+		  </div>		  
+	</div>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
+	<script src="/assets/js/proxy.js" defer></script>
+	<div id="align">
+			<iframe id="ifr"></iframe>
+	</div>
+	
+	<div class="alignment-container-1" style="margin-top:15%;">
+		<div class="header-container">
+			<div class="logo-image">
+				<h1 id="astralerzh1"style=" font-family: 'Aldrich', sans-serif; text-align: center;  ">Astralerz Lite</h1>
+			</div>
+		</div>
+		<div class="header-container">
+		</div>
+		<form id="form">
+			<input autofocus autocomplete="off" class="search" id="search" placeholder="URL Or Search" required />
+			<button type="submit" class="submit-button">
+				<i class="fas fa-search searchicon"></i>
+			</button>
+		</form>
+		<div id="suggestions" style="display: none;"></div>
+	
+		<footer>
+			<a id="social"style="font-family: Aldrich; text-decoration: none;" href="https://github.com/notastralerz">GitHub</a>
+			<a id="social"style="font-family: Aldrich; text-decoration: none;" href="https://discord.com/users/1140889335269437571">Discord</a>
+		</footer>
+	</div>
+	<script src="/assets/js/home.js"></script>
+	<script>
+		//window.addEventListener("load", () => abc());
+	</script>
+</body>
+</html>
